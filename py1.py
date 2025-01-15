@@ -1,4 +1,4 @@
-#---------------------------------------------------------
+ #---------------------------------------------------------
 
 def osszead(szam1, szam2):
     """ A függvény két számot kap és 
@@ -119,12 +119,13 @@ def paros(szam):
         majd True-val tér vissza, ha a szám páros és 
         False-al ha a szám páratlan.
     """    
-    if szam // 2 == 0:
+    if szam % 2 == 0:
         return True
     else:
         return False
 
 pass
+
 assert paros(12) == True
 assert paros(13) == False
 #---------------------------------------------------------
@@ -134,7 +135,7 @@ def kettovel_oszthato(szam):
         True-val tér vissza, ha a szám kettővel osztható és 
         False-al ha nem.
     """    
-    if szam // 2 == 0:
+    if szam % 2 == 0:
         return True
     else:
         return False
@@ -149,7 +150,7 @@ def harommal_oszthato(szam):
         True-val tér vissza, ha a szám hárommal osztható és 
         False-al ha nem.
     """    
-    if szam // 3 == 0:
+    if szam % 3 == 0:
         return True
     else:
         return False
@@ -164,7 +165,7 @@ def hettel_oszthato(szam):
         True-val tér vissza, ha a szám héttel osztható és 
         False-al ha nem.
     """    
-    if szam // 7 == 0:
+    if szam % 7 == 0:
         return True
     else:
         return False
@@ -178,7 +179,7 @@ def kocka_terfogat(oldal):
     """ A függvény bemenetként megkapja a kocka oldal hosszúságát és 
         a kocka térfogatával tér vissza.
     """    
-    return oldal * 3
+    return oldal ** 3
 
 pass 
 assert kocka_terfogat(2) == 8
@@ -248,3 +249,6 @@ pass
 assert abszolut(-7) == 7
 assert abszolut( 0) == 0
 #========================================
+
+
+
